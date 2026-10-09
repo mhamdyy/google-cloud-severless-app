@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package document_pipeline;
+
+message DocumentMetadataRecord {
+    string filename = 1;
+    string bucket = 2;
+    string upload_time = 3;
+    string processed_time = 4;
+    int64 word_count = 5;
+    repeated string tags = 6;
+    int64 file_size_bytes = 7;
+    string status = 8;
+}
